@@ -1,0 +1,28 @@
+Algoritmo horas_a_pagar 
+	pago_dia <-75
+	pago_hora <-15.50
+	bono<- 150
+	
+	Definir nombre Como Caracter
+	Definir horas Como Entero
+	
+	
+	Escribir Sin Saltar"Ingrese el nombre de trabajador"
+	Leer nombre
+	
+	Escribir Sin Saltar"Ingrese sus dias trabajados"
+	Leer dias
+	
+	Escribir Sin Saltar "Ingrese sus horas trabajadas"
+	Leer horas
+	
+	pagos =(pago_dia*dias)+(pago_hora*horas)
+	
+	si dias > 15 Entonces 
+		pago_bono=pagos+bono
+		Mostrar nombre " Su pago es Q", pago_bono
+	SiNo
+		pago=pagos
+		mostrar nombre " Su pago es Q", pagos
+	FinSi
+FinAlgoritmo
